@@ -1,0 +1,58 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: feature/pynblint_fix
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/clarvia-org/clarvia-graph:
+      branch: main
+      repo: https://github.com/clarvia-org/clarvia-graph
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/clarvia-org/clarvia-graph git:
+        commands:
+        - /usr/bin/env sh .sqa/script.mahogany_tough_toucan.sh
+        container: qc.acc_mahogany_shy_whale
+  QC.Doc:
+    repos:
+      github.com/clarvia-org/clarvia-graph find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.sunset_mature_bullfrog.sh
+        container: qc.doc_polar_motivated_tortoise
+      github.com/clarvia-org/clarvia-graph git:
+        commands:
+        - /usr/bin/env sh .sqa/script.bone_bubbly_gazelle.sh
+        container: qc.doc_pansy_ardent_hyena
+      github.com/clarvia-org/clarvia-graph markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.ice_reserved_panda.sh
+        container: qc.doc_apricot_foolish_dingo
+  QC.Lic:
+    repos:
+      github.com/clarvia-org/clarvia-graph licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.umber_candid_squid.sh
+        container: qc.lic_amaranth_calm_roc
+  QC.Met:
+    repos:
+      github.com/clarvia-org/clarvia-graph cff-converter-python:
+        commands:
+        - /usr/bin/env sh .sqa/script.aqua_candid_weasel.sh
+        container: qc.met_sienna_attentive_osprey
+  QC.Sty:
+    repos:
+      github.com/clarvia-org/clarvia-graph jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.rose_playful_albatross.sh
+        container: qc.sty_seafoam_rugged_seahorse
+  QC.Ver:
+    repos:
+      github.com/clarvia-org/clarvia-graph get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.pine_thankful_wasp.sh
+        container: qc.ver_red_authentic_elk
+timeout: 5400
