@@ -15,44 +15,44 @@ sqa_criteria:
     repos:
       github.com/clarvia-org/clarvia-graph git:
         commands:
-        - /usr/bin/env sh .sqa/script.cinnabar_radiant_squirrel.sh
-        container: qc.acc_grege_pensive_coyote
+        - /usr/bin/env sh .sqa/script.periwinkle_thoughtful_hornbill.sh
+        container: qc.acc_sienna_daring_wombat
   QC.Doc:
     repos:
       github.com/clarvia-org/clarvia-graph find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.currant_reliable_hare.sh
-        container: qc.doc_harlequin_studious_goat
+        - /usr/bin/env sh .sqa/script.grape_sarcastic_vulture.sh
+        container: qc.doc_aqua_sarcastic_dragonfly
       github.com/clarvia-org/clarvia-graph git:
         commands:
-        - /usr/bin/env sh .sqa/script.olive_smart_wolf.sh
-        container: qc.doc_iris_intuitive_newt
+        - /usr/bin/env sh .sqa/script.burgundy_cheerful_bullfrog.sh
+        container: qc.doc_chili_vibrant_anaconda
       github.com/clarvia-org/clarvia-graph markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.indigo_gracious_roc.sh
-        container: qc.doc_scarlet_reliable_catfish
+        - /usr/bin/env sh .sqa/script.boysenberry_tough_piranha.sh
+        container: qc.doc_green_elated_hyena
   QC.Lic:
     repos:
       github.com/clarvia-org/clarvia-graph licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.eggplant_radiant_raccoon.sh
-        container: qc.lic_wave_meticulous_turkey
+        - /usr/bin/env sh .sqa/script.powder_stubborn_okapi.sh
+        container: qc.lic_rosewater_resourceful_reindeer
   QC.Met:
     repos:
       github.com/clarvia-org/clarvia-graph cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.cosmos_devoted_flamingo.sh
-        container: qc.met_pearl_tactful_manatee
+        - /usr/bin/env sh .sqa/script.hunter_goofy_camel.sh
+        container: qc.met_teal_nurturing_bear
   QC.Sty:
     repos:
       github.com/clarvia-org/clarvia-graph jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.tundra_persistent_llama.sh
-        container: qc.sty_polar_adventurous_barracuda
+        - /usr/bin/env sh .sqa/script.cadet_positive_dugong.sh
+        container: qc.sty_khaki_spirited_manta
   QC.Ver:
     repos:
       github.com/clarvia-org/clarvia-graph get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sapphire_brave_dhole.sh
-        container: qc.ver_iris_exuberant_bat
+        - /usr/bin/env sh .sqa/script.brown_graceful_rhinoceros.sh
+        container: qc.ver_sage_sincere_dugong
 timeout: 5400
