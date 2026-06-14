@@ -15,44 +15,44 @@ sqa_criteria:
     repos:
       github.com/clarvia-org/clarvia-graph git:
         commands:
-        - /usr/bin/env sh .sqa/script.sunset_bright_grasshopper.sh
-        container: qc.acc_pine_pensive_penguin
+        - /usr/bin/env sh .sqa/script.verdant_nurturing_catfish.sh
+        container: qc.acc_aquamarine_silly_jaguar
   QC.Doc:
     repos:
       github.com/clarvia-org/clarvia-graph find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.kiwi_apathetic_hyena.sh
-        container: qc.doc_peony_empathetic_octopus
+        - /usr/bin/env sh .sqa/script.iris_eccentric_impala.sh
+        container: qc.doc_lapis_spirited_meerkat
       github.com/clarvia-org/clarvia-graph git:
         commands:
-        - /usr/bin/env sh .sqa/script.rust_analytical_narwhal.sh
-        container: qc.doc_raspberry_foolish_tortoise
+        - /usr/bin/env sh .sqa/script.cadet_dizzy_stingray.sh
+        container: qc.doc_amethyst_rational_cormorant
       github.com/clarvia-org/clarvia-graph markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.jasmine_supportive_pegasus.sh
-        container: qc.doc_banana_reserved_catfish
+        - /usr/bin/env sh .sqa/script.banana_resourceful_gecko.sh
+        container: qc.doc_cinnabar_harmonious_grizzly
   QC.Lic:
     repos:
       github.com/clarvia-org/clarvia-graph licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.pearl_reckless_python.sh
-        container: qc.lic_wave_meticulous_skunk
+        - /usr/bin/env sh .sqa/script.butterscotch_carefree_dugong.sh
+        container: qc.lic_walnut_outgoing_hamster
   QC.Met:
     repos:
       github.com/clarvia-org/clarvia-graph cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.apricot_assured_badger.sh
-        container: qc.met_khaki_easygoing_leopard
+        - /usr/bin/env sh .sqa/script.cinnabar_warm_osprey.sh
+        container: qc.met_butterscotch_adventurous_wildcat
   QC.Sty:
     repos:
       github.com/clarvia-org/clarvia-graph jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.poppy_frugal_toad.sh
-        container: qc.sty_sage_reserved_armadillo
+        - /usr/bin/env sh .sqa/script.aquamarine_confused_manatee.sh
+        container: qc.sty_orange_smart_penguin
   QC.Ver:
     repos:
       github.com/clarvia-org/clarvia-graph get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.ash_diplomatic_thrush.sh
-        container: qc.ver_ebony_gentle_bison
+        - /usr/bin/env sh .sqa/script.khaki_hopeful_heron.sh
+        container: qc.ver_glacier_generous_manatee
 timeout: 5400
