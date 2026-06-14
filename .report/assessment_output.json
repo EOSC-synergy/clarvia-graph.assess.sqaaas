@@ -3,14 +3,14 @@
         "version": "3.5.0",
         "report_json_url": "https://raw.githubusercontent.com/eosc-synergy/clarvia-graph.assess.sqaaas/main/.report/assessment_output.json",
         "report_permalink": "https://sqaaas.eosc-synergy.eu/full-assessment/report/https://raw.githubusercontent.com/eosc-synergy/clarvia-graph.assess.sqaaas/main/.report/assessment_output.json",
-        "timestamp": 1781439626.763766
+        "timestamp": 1781439654.0166457
     },
     "repository": [
         {
             "url": "https://github.com/clarvia-org/clarvia-graph",
             "name": "clarvia-org/clarvia-graph",
             "tag": "main",
-            "commit_id": "042943fa73012c4690f1dcc722a10385ba69b61b",
+            "commit_id": "100716adf631e9bf948c1702ad88af6e159749bc",
             "is_main_repo": true,
             "avatar_url": "https://avatars.githubusercontent.com/u/284588937?v=4",
             "description": null,
